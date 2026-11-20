@@ -2,7 +2,8 @@
 name: "\U0001F4CB Task"
 about: Create a new development or maintenance task
 title: ''
-labels: triage
+labels: needs triage
+type: 'Task'
 assignees: ''
 
 ---
