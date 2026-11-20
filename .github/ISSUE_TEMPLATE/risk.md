@@ -2,49 +2,58 @@
 name: "\U0001F6D1 Risk"
 about: Create a new project risk report
 title: RISK
-labels: Project task
+labels: projects
 assignees: ''
 
 ---
 
-🛑 Risk Report
+# 🛑 Risk Report
 
-🧾 Risk Description
+## 🧾 Risk Description
+
 Provide a clear and concise description of the risk. What could go wrong?
 
-🎯 Impact
-Impact Level: High | Medium | Low
+## 🎯 Impact
 
-Affected Areas:
+**Impact Level:** High | Medium | Low
 
- Code Quality
- Project Timeline
- Budget
- Project dependencies
- Other: Specify
+**Affected Areas:**
 
-📈 Likelihood
-Likelihood of Occurrence: High | Medium | Low
+- [ ] Code Quality
+- [ ] Project Timeline
+- [ ] Budget
+- [ ] Project dependencies
+- [ ] Other: *specify*
 
-🧩 Root Cause
+## 📈 Likelihood
+
+**Likelihood of Occurrence:** High | Medium | Low
+
+## 🧩 Root Cause
+
 Brief description of the underlying factors contributing to the risk.
 
-🔁 Current Controls
+## 🔁 Current Controls
+
 Describe any existing mitigation, contingency plans, or controls in place.
 
-🔧 Recommended Mitigation Actions
+## 🔧 Recommended Mitigation Actions
+
 Outline the proposed actions to reduce the likelihood or impact.
 
-📅 Action Owner & Timeline
-Assigned To: @assignee
+## 📅 Action Owner & Timeline
 
-Target Resolution Date: YYYY-MM-DD
+**Assigned To:** @assignee
 
-✅ Status
- Identified
- In Review
- Actioned
- Closed
+**Target Resolution Date:** YYYY-MM-DD
 
-📎 Notes & References
+## ✅ Status
+
+- [ ] Identified
+- [ ] In Review
+- [ ] Actioned
+- [ ] Closed
+
+## 📎 Notes & References
+
 Link related issues, documents, pull requests, etc.

@@ -1,0 +1,118 @@
+name: Bug report
+description: Report a fault with a ROCC product.
+type: Bug
+body:
+- type: markdown
+  attributes:
+    value: Keep it brief and specific. Do not include passwords, access tokens, tenant
+      personal data or confidential logs. Report security vulnerabilities privately,
+      not in a public issue.
+- type: dropdown
+  id: report-format
+  attributes:
+    label: Report format
+    description: Identifies this shared form for automatic triage. Leave unchanged.
+    options:
+    - ROCC bug report v1
+    default: 0
+  validations:
+    required: true
+- type: dropdown
+  id: product
+  attributes:
+    label: Product
+    description: Select every affected product. Choose Other / Not sure if you cannot
+      identify it.
+    multiple: true
+    options:
+    - Core
+    - Resolve
+    - Attend
+    - Diagnose
+    - Tracker
+    - Orchestrator
+    - Contractor Portal
+    - Media
+    - Mobile (legacy)
+    - Asset Management
+    - Focus
+    - UESD
+    - Other / Not sure
+  validations:
+    required: true
+- type: input
+  id: customers
+  attributes:
+    label: Interested customers
+    description: Affected or interested customer organisations, separated by commas.
+      Use None / Internal / Unknown if appropriate. Do not identify customers in public
+      issues; provide details privately instead.
+  validations:
+    required: true
+- type: input
+  id: version
+  attributes:
+    label: Version
+    description: Affected version(s), e.g. 12.11.2. Say Unknown if unavailable.
+  validations:
+    required: true
+- type: input
+  id: environment
+  attributes:
+    label: Environment
+    description: Live, UAT, demo or local; include browser/device/OS only where relevant.
+      No private URLs or credentials.
+  validations:
+    required: true
+- type: textarea
+  id: actual
+  attributes:
+    label: Actual result
+    description: What went wrong? Include the exact error if safe to share.
+  validations:
+    required: true
+- type: textarea
+  id: expected
+  attributes:
+    label: Expected result
+    description: What should have happened?
+  validations:
+    required: true
+- type: textarea
+  id: steps
+  attributes:
+    label: Steps to reproduce
+    description: Number the steps. If intermittent or not reproducible, say how often
+      and what was happening.
+  validations:
+    required: true
+- type: textarea
+  id: impact
+  attributes:
+    label: Impact
+    description: Who or what is blocked? Is there a reasonable workaround?
+  validations:
+    required: true
+- type: dropdown
+  id: severity
+  attributes:
+    label: Severity
+    description: Proposed severity for triage, not a priority or contractual commitment.
+    options:
+    - S0 - World ending
+    - S1 - Major function broken
+    - S2 - Non-critical or reasonable workaround
+    - S3 - Cosmetic
+    - Unsure
+    default: 4
+  validations:
+    required: true
+- type: textarea
+  id: evidence
+  attributes:
+    label: Evidence
+    description: Optional screenshots, sanitised logs, example IDs, Freshdesk FD-#####
+      or CR reference. No personal data or secrets.
+  validations:
+    required: false
+
